@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
+/* Your custom global styles below */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -121,9 +121,8 @@
   }
 }
 
-main,
 nav {
-  @apply mx-auto my-12 max-w-6xl;
+  @apply mx-auto my-12;
 }
 
 p {
@@ -131,5 +130,5 @@ p {
 }
 
 h1 {
-  @apply text-4xl font-extrabold text-red-50;
+  @apply text-4xl font-extrabold;
 }

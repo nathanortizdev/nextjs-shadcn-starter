@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { PrimaryNav } from '@/components/PrimaryNav';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -27,10 +28,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav>
-          <h1>Nathan&apos;s Portfolio</h1>
-        </nav>
-        {children}
+        <header>
+          <PrimaryNav />
+        </header>
+        <main id="main-content">{children}</main>
       </body>
     </html>
   );
